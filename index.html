@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recruitment App</title>
+    <link rel="stylesheet" href="/recruitmentApp.css" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <nav class="nav">
+      <a href="/" class="logo">Recruitment Solutions</a>
+
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+
+      <div class="nav__link hide">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Service</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+    <!-- Homepage -->
+    <div class="homepage">
+      <div class="item-1">
+      <h1>Welcome to the Recruitment App!</h1>
+      <p>
+        Streamline your hiring process with our online recruitment solution.
+      </p>
+    </div>
+      <div class="feature-card">
+        <h2>Efficient Hiring</h2>
+        <p>Find the right candidates quickly and easily.</p>
+      </div>
+      <div class="feature-card">
+        <h2>User-Friendly Interface</h2>
+        <p>Simplify your hiring workflow with our intuitive platform.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Powerful Tools</h2>
+        <p>Access a range of tools to manage and evaluate candidates.</p>
+      </div>
+    </div>
+
+    <!-- Login and Register Pages -->
+    <div class="form-container">
+    <div class="login-card" id="login-form">
+      <h2>Login</h2>
+      <h3>Enter your credentials</h3>
+      <form class="login-form">
+        <input type="text" class="control" id="username" placeholder="Username" required />
+        <div class="password">
+          <input type="password" class="control" id="password" placeholder="Password" required >
+        </div>
+        <button class="control" type="submit">LOGIN</button>
+      </form>
+      <p>New user? <a href="#register">Register here</a></p>
+    </div>
+  </div>
+
+   <div class="form-container">
+    <div class="login-card" id="register-form">
+      <h2>Register</h2>
+      <form class="login-form">
+        <input type="text" class="control" id="companynme" placeholder="Company Name" required />
+        <input type="email" class="control" id="email" placeholder="Email" required />
+        <div class="password">
+          <input type="password" class="control" id="Password" placeholder="Password" required >
+        </div>
+        <button class="control" type="submit">Register</button>
+      </form>
+      <p>Already register? <a href="#login-form">Login here</a>.</p>
+   </div>
+  </div>
+    <!-- Candidate Search -->
+    <div class="search-bar">
+    <div class="search-container">
+      <h2>Search Candidates</h2>
+      <form id="search-form">
+        <input type="text" class="Search-input" placeholder="Location" />
+        <select >
+          <option value="">Job Role</option>
+          <option value="engineer">Engineer</option>
+          <option value="manager">Manager</option>
+          <option value="designer">Web Designer</option>
+          <option value="designer">Graphic Designer</option>
+          <option value="designer">Software Developer</option>
+        </select>
+        <input type="submit" class="search-btn" value="Search" />
+      </form>
+      <ul class="candidate-list" id="candidate-list">
+        <!-- Fetched candidates will be dynamically added here -->
+      </ul>
+    </div>
+  </div>
+    <script src="/recruitmentApp.js"></script>
+  </body>
+</html>
